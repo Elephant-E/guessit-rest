@@ -2,17 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "guessitrest/app.py",
-      "use": "@vercel/python",
-      "config": {
-        "pythonVersion": "3.8"
-      }
+      "src": "api/index.py",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "guessitrest/app.py"
+      "dest": "api/index.py"
     }
   ]
 }
