@@ -16,8 +16,6 @@ setup_requires = ['pytest-runner']
 
 dev_require = ['zest.releaser[recommended]', 'pylint', 'tox', 'pylint']
 
-tests_require = ['pytest', 'pytest-flask', 'pytest-mock']
-
 entry_points = {
     'console_scripts': [
         'guessit-rest = guessitrest.__main__:main'
@@ -34,7 +32,6 @@ args = dict(name='guessit-rest',
             version=about['__version__'],
             description='GuessIt - REST WebService',
             long_description=README,
-            # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
             classifiers=['Development Status :: 5 - Production/Stable',
                          'License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)',
                          'Operating System :: OS Independent',
@@ -58,12 +55,9 @@ args = dict(name='guessit-rest',
             include_package_data=True,
             install_requires=install_requires,
             setup_requires=setup_requires,
-            tests_require=tests_require,
             entry_points=entry_points,
-            test_suite='guessitrest.test',
             zip_safe=True,
             extras_require={
-                'test': tests_require,
                 'dev': dev_require
             })
 
