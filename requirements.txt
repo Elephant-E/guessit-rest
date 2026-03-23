@@ -1,4 +1,6 @@
 flask
 guessit
+flask-cors
+flask-restful>=0.3.6
 setuptools
 wheel
