@@ -1,2 +1,3 @@
-# see https://caremad.io/blog/setup-vs-requirement/
--e .
+flask
+guessit
+uvicorn
