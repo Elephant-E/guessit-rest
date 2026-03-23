@@ -1,5 +1,13 @@
 {
+  "name": "guessit-rest",
+  "version": "1.0.0",
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
+  },
+  "dependencies": {
+    "flask": "^2.0.0",
+    "guessit": "^3.0.0",
+    "flask-cors": "^3.1.1",
+    "flask-restful": "^0.3.9"
   }
 }
